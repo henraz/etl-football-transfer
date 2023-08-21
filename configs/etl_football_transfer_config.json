@@ -1,0 +1,37 @@
+{
+    "source": 
+    {
+        "bucket": "bucket-name-source",
+        "folder": "folder-name-csv-files/",
+        "header": true,
+        "delimiter": ","
+    },
+
+    "target":
+    {   
+        "project_id": "project-id",
+        "dataset": "dataset-name",
+        "dimensions": {
+            "dim_club":        ["id_club", "club_name"],
+            "dim_player":      ["id_player", "player_name", "age", "position"],
+            "dim_league":      ["id_league", "league_name"],
+            "dim_date_season": ["id_time", "year", "season", "transfer_period"],
+            "dim_country":     ["id_country", "country"],
+            "dim_transfer":    ["id_transfer", "transfer_movement"],
+            "dim_club_involv": ["id_club_involv", "club_involved_name"]
+        },
+        "fact": {
+            "fact_transfer": ["id_club",
+                                "id_player",
+                                "id_league",
+                                "id_time",
+                                "id_country",
+                                "id_transfer",
+                                "id_club_involv",
+                                "fee",
+                                "fee_description"]
+        },
+        "mode_write": "overwrite",
+        "temporary_bucket": "bucket-name/temporary-bucket-folder"
+    }
+}
