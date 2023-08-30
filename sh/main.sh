@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PROJECT_ID="project-id"
-CLUSTER_NAME="cluster-name"
+PROJECT_ID="project-dev"
+CLUSTER_NAME="football-transfer"
 
 
 PYSPARK_JOB="./src/elt_football_transfer.py"

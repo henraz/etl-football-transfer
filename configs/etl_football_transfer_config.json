@@ -1,16 +1,16 @@
 {
     "source": 
     {
-        "bucket": "bucket-name-source",
-        "folder": "folder-name-csv-files/",
+        "bucket": "bucket-football-transfer",
+        "folder": "csv-files/",
         "header": true,
         "delimiter": ","
     },
 
     "target":
     {   
-        "project_id": "project-id",
-        "dataset": "dataset-name",
+        "project_id": "project-dev",
+        "dataset": "dw-football-transfer",
         "dimensions": {
             "dim_club":        ["id_club", "club_name"],
             "dim_player":      ["id_player", "player_name", "age", "position"],
@@ -32,6 +32,6 @@
                                 "fee_description"]
         },
         "mode_write": "overwrite",
-        "temporary_bucket": "bucket-name/temporary-bucket-folder"
+        "temporary_bucket": "bucket-temp/folder-temp"
     }
 }

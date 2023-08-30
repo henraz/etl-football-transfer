@@ -1,10 +1,10 @@
-CREATE TABLE `project-id.dataset-name.dim_club` (
+CREATE TABLE `project-dev.dw-football-transfer.dim_club` (
                 id_club INTEGER NOT NULL,
                 club_name STRING
 );
 
 
-CREATE TABLE `project-id.dataset-name.dim_player` (
+CREATE TABLE `project-dev.dw-football-transfer.dim_player` (
                 id_player INTEGER NOT NULL,
                 player_name STRING,
                 age INTEGER,
@@ -12,31 +12,31 @@ CREATE TABLE `project-id.dataset-name.dim_player` (
 );
 
 
-CREATE TABLE `project-id.dataset-name.dim_league` (
+CREATE TABLE `project-dev.dw-football-transfer.dim_league` (
                 id_league INTEGER NOT NULL,
                 league_name STRING
 );
 
 
-CREATE TABLE `project-id.dataset-name.dim_transfer` (
+CREATE TABLE `project-dev.dw-football-transfer.dim_transfer` (
                 id_transfer INTEGER NOT NULL,
                 transfer_movement STRING
 );
 
 
-CREATE TABLE `project-id.dataset-name.dim_club_involv` (
+CREATE TABLE `project-dev.dw-football-transfer.dim_club_involv` (
                 id_club_involv INTEGER NOT NULL,
                 club_involved_name STRING
 );
 
 
-CREATE TABLE `project-id.dataset-name.dim_country` (
+CREATE TABLE `project-dev.dw-football-transfer.dim_country` (
                 id_country INTEGER NOT NULL,
                 country_name STRING
 );
 
 
-CREATE TABLE `project-id.dataset-name.dim_date_season` (
+CREATE TABLE `project-dev.dw-football-transfer.dim_date_season` (
                 id_time INTEGER NOT NULL,
                 year_transf INTEGER,
                 season STRING,
@@ -44,7 +44,7 @@ CREATE TABLE `project-id.dataset-name.dim_date_season` (
 );
 
 
-CREATE TABLE `project-id.dataset-name.fact_transfer` (
+CREATE TABLE `project-dev.dw-football-transfer.fact_transfer` (
                 id_club INTEGER NOT NULL,
                 id_player INTEGER NOT NULL,
                 id_league INTEGER NOT NULL,
