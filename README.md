@@ -1,6 +1,6 @@
 # etl-football-transfer
 
-Este projeto tem como objetivo criar um Data Warehouse (utilizando modelagem tradicional Star Schema) no BigQuery com dados de transferência de jogadores de alguns campeonatos do futebol Europeu desde a temporada 1992/1993, a patir de um dataset do [Kaggle](https://www.kaggle.com/datasets/mexwell/football-player-transfers).
+Este projeto tem como objetivo criar um Data Warehouse (utilizando modelagem tradicional Star Schema) no BigQuery com dados de transferência de jogadores de alguns campeonatos do futebol Europeu desde a temporada 1992/1993, a patir de um dataset do [Kaggle](https://www.kaggle.com/datasets/mexwell/football-player-transfers). Além disso, a etapa de ETL foi desenvolvida utilizando o Google Dataproc e PySpark.
 
 
 ## Dataset Utilizado
